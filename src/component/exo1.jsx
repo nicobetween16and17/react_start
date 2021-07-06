@@ -15,3 +15,4 @@ const Welcome =function(age, nom) {
     </div>
   );
 }
+export default Welcome;

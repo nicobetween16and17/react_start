@@ -1,6 +1,4 @@
-import logo from './logo.svg';
 import Welcome from "./component/exo1.jsx";
-import './App.css';
 
 function App() {
   return (
