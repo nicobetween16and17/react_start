@@ -1,17 +1,17 @@
 import React from 'react';
 
-const Welcome =function(age, nom) {
-    if(age == null){
-        age = 18
+const Welcome =function(props) {
+    if(props.age == null){
+        props.age = 18
     }
-    if(nom== null){
-        nom = "Roger"
+    if(props.nom== null){
+        props.nom = "Roger"
     }
 
   return (
     <div>
-      <h1>Bienvenu {nom }</h1>
-      <p>Vous avez {age} ans</p>
+      <h1>Bienvenu {props.nom }</h1>
+      <p>Vous avez {props.age} ans</p>
     </div>
   );
 }
