@@ -4,6 +4,7 @@ function App() {
   return (
     <div className="App">
      <Welcome nom = 'Bono' age = '20'/>
+     <Welcome></Welcome>
     </div>
   );
 }

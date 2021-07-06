@@ -1,17 +1,17 @@
 import React from 'react';
+import PorpTypes from 'prop-types';
+import { defaultPath } from 'tough-cookie';
 
 const Welcome =function(props) {
-    if(props.age == null){
-        props.age = 18
-    }
-    if(props.nom== null){
-        props.nom = "Roger"
-    }
-
+    const{nom,age}=props;
+    Welcome.defaultProps = {
+        nom: "Roger",
+        age: 18
+    };
   return (
     <div>
-      <h1>Bienvenu {props.nom }</h1>
-      <p>Vous avez {props.age} ans</p>
+      <h1>Bienvenu {nom}</h1>
+      <p>Vous avez {age} ans</p>
     </div>
   );
 }
