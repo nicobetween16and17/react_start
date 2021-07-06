@@ -1,12 +1,9 @@
 import React from 'react';
-import PorpTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const Welcome =function(props) {
     const{nom,age}=props;
-    Welcome.defaultProps = {
-        nom: "Roger",
-        age: 18
-    };
+
   return (
     <div>
       <h1>Bienvenu {nom}</h1>
@@ -14,4 +11,12 @@ const Welcome =function(props) {
     </div>
   );
 }
+Welcome.defaultProps = {
+    nom: "Roger",
+    age: 18
+};
+Welcome.propTypes = {
+    nom:PropTypes.string,
+    age:PropTypes.number
+};
 export default Welcome;
