@@ -1,6 +1,5 @@
 import React from 'react';
 import PorpTypes from 'prop-types';
-import { defaultPath } from 'tough-cookie';
 
 const Welcome =function(props) {
     const{nom,age}=props;
