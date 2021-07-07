@@ -1,6 +1,7 @@
 import Welcome from "./component/exo1.jsx";
 import {nanoid} from 'nanoid';
 import Students from './component/exo2.jsx';
+import Compteur from './component/compteur.jsx'
 function App() {
   const student=[
     {
@@ -43,6 +44,7 @@ function App() {
      <Welcome nom = 'Bono' age = '20'/>
      <Welcome></Welcome>
      <Students list={student}></Students>
+     <Compteur></Compteur>
     </div>
   );
 }
