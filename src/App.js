@@ -35,11 +35,11 @@ function App() {
       id:nanoid(),
       name:'Gina',
       option:'Allemand Lv-2',
-      sexe:'Asexuée',
+      sexe:'Assexuée',
       resultat:40
     }];
   return (
-    <div className="App">
+    <div style={{padding: "40px"}}className="App">
      <Welcome nom = 'Bono' age = '20'/>
      <Welcome></Welcome>
      <Students list={student}></Students>

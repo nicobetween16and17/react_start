@@ -13,15 +13,39 @@ function grade(number){
 }
 const Students =function(props) {
     const listJSX=props.list.map(
-        p => <li style={p.resultat<50?{color:"red"}:{color:"green"}}key ={p.id}>{p.name}, élève de {p.option} au eu une note de {p.resultat} = {grade(p.resultat)} </li>
+        p => <tr>
+                
+                 <td style={{border:"1px solid black",borderCollapse:"collapse"}}>
+                    {p.name} 
+                 </td>
+                 <td style={{border:"1px solid black",borderCollapse:"collapse"}}>
+                     {p.sexe}
+                 </td>
+                 <td style={{border:"1px solid black",borderCollapse:"collapse"}}>
+                    {p.option}
+                 </td>
+                 <td style={{border:"1px solid black",borderCollapse:"collapse"}}>
+                    {p.resultat}  
+                 </td>
+                 <td style={p.resultat<50?{color:"red",border:"1px solid black",borderCollapse:"collapse"}:{color:"green",border:"1px solid black",borderCollapse:"collapse"}}>
+                    {grade(p.resultat)}
+                 </td>
+            </tr>
     );
 
   return (
     <>
     <h2>Classe 1-A</h2>
-      <ul>
+      <table style={{border:"1px solid black",borderCollapse:"collapse"}}>
+          <tr style={{border:"1px solid black",borderCollapse:"collapse"}}>
+              <td style={{border:"1px solid black",borderCollapse:"collapse"}}>Nom</td>
+              <td style={{border:"1px solid black",borderCollapse:"collapse"}}>sexe</td>
+              <td style={{border:"1px solid black",borderCollapse:"collapse"}}>option</td>
+              <td style={{border:"1px solid black",borderCollapse:"collapse"}}>resultat</td>
+              <td style={{border:"1px solid black",borderCollapse:"collapse"}}>Grade</td>
+          </tr>
         {listJSX}
-      </ul>
+      </table>
     </>
   );
 }
