@@ -18,5 +18,6 @@ Welcome.defaultProps = {
 Welcome.propTypes = {
     nom:PropTypes.string,
     age:PropTypes.number
+   
 };
 export default Welcome;
