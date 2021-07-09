@@ -14,14 +14,13 @@ const Calcul=()=> {
         console.log("Operation: ",operation)
         console.log("Operateur: ",operateur)
         switch(operation){
-            case "+": setResultat({operand} + {operateur})
-            console.log("Calcul: ",operand+operateur)
+            case "+": setResultat(parseInt(operand) + parseInt(operateur))
             break;
-            case "-": setResultat({operand} - {operateur})
+            case "-": setResultat(parseInt(operand) - parseInt(operateur))
             break;
-            case "x": setResultat({operand} * {operateur})
+            case "x": setResultat(parseInt(operand) * parseInt(operateur))
             break;
-            case "/": operateur === 0 ? alert("Operation imposible"):setResultat({operand} / {operateur})
+            case "/": operateur === 0 ? alert("Operation imposible"):setResultat(parseInt(operand) / parseInt(operateur))
             break;
             default: alert("Champs non remplis")
     }
