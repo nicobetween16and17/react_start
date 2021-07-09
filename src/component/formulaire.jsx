@@ -33,15 +33,15 @@ const Calcul=()=> {
     
     <form onSubmit={handleCalcul}>
         
-        <input type="number" value = {operand} onChange={e=>setOperand(e.target.value)}></input>
+        <input type="number" required = "true" value = {operand} onChange={e=>setOperand(e.target.value)}></input>
         <select onChange={e=>setOperation(e.target.value)}>
             <option value = "+">[+]</option>
             <option value = "-">[-]</option>
             <option value = "x">[x]</option>
             <option value = "/">[/]</option>
         </select>
-        <input type="number" value ={operateur} required = "required" onChange={e=>setOperateur(e.target.value)}></input>
-        <input type="submit" value = 'Calculer' onClick= {handleCalcul}/>
+        <input type="number" value ={operateur} required = "true" onChange={e=>setOperateur(e.target.value)}></input>
+        <input type="submit" value = 'Calculer'/>
         <p>{resultat}</p>
     </form>
       
