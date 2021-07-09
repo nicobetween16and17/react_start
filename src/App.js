@@ -1,9 +1,7 @@
-import Welcome from "./component/exo1.jsx";
-import {nanoid} from 'nanoid';
-import Students from './component/exo2.jsx';
-import Compteur from './component/compteur.jsx'
+
+import Calcul from './component/formulaire.jsx'
 function App() {
-  const student=[
+  /*const student=[
     {
       id:nanoid(),
       name:'Jean',
@@ -38,13 +36,11 @@ function App() {
       option:'Allemand Lv-2',
       sexe:'Assexuée',
       resultat:40
-    }];
+    }];*/
   return (
     <div style={{padding: "40px"}}className="App">
-     <Welcome nom = 'Bono' age = '20'/>
-     <Welcome></Welcome>
-     <Students list={student}></Students>
-     <Compteur></Compteur>
+     <h1>Calcul</h1>
+     <Calcul/>
     </div>
   );
 }

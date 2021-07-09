@@ -13,6 +13,9 @@ const Compteur = function() {
       <button onClick={() => setCount(count - 1)}>
         -
       </button>
+      <button onClick={() => setCount(0)}>
+        0
+      </button>
     </>
   );
 }
