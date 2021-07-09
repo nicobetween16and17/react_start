@@ -4,10 +4,10 @@ import { PropTypes } from 'prop-types';
 
 const Calcul=()=> {
 
-    const [operand,setOperand] = useState(0);
-    const [operateur, setOperateur] = useState(0);
+    const [operand,setOperand] = useState(undefined);
+    const [operateur, setOperateur] = useState(undefined);
     const [operation, setOperation] = useState("+")
-    const [resultat, setResultat] = useState(0)
+    const [resultat, setResultat] = useState(undefined)
     const handleCalcul= e=>{
         e.preventDefault();
         console.log("Operand: ",operand)
@@ -23,9 +23,9 @@ const Calcul=()=> {
             case "/": operateur === 0 ? alert("Operation imposible"):setResultat(parseInt(operand) / parseInt(operateur))
             break;
             default: alert("Champs non remplis")
-    }
+        }
     console.log("Resultat: ",resultat)
-}
+    }
     
 
   return (
