@@ -1,5 +1,5 @@
 
-import Calcul from './component/formulaire.jsx'
+import Tache from './component/tache.jsx'
 function App() {
   /*const student=[
     {
@@ -39,8 +39,8 @@ function App() {
     }];*/
   return (
     <div style={{padding: "40px"}}className="App">
-     <h1>Calcul</h1>
-     <Calcul/>
+     <h1>Taches</h1>
+     <Tache></Tache>
     </div>
   );
 }
